@@ -45,12 +45,16 @@ p {
 
 }
 
+body {
+    background-color: #504c4c;
+}
+
 nav {
     width: 100%;
     height: 5rem;
     background-color: black;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     font-size: 1.2rem;
 }
@@ -62,10 +66,15 @@ nav {
 .divLogo img {
     width: 70%;
     transition: 0.5s;
+
 }
 
 .divLogo img:hover {
     filter: brightness(0) saturate(100%) invert(87%) sepia(50%) saturate(224%) hue-rotate(158deg) brightness(93%) contrast(88%);
+    text-shadow:
+    1px 1px 2px black,
+    0 0 1em rgb(255, 255, 255),
+    0 0 0.2em rgb(255, 255, 255);
 }
 
 .divMenu {
@@ -85,9 +94,9 @@ nav {
 .menu li:hover a{
     color: #b7d9e0;
     text-shadow:
-    1px 1px 2px black,
-    0 0 1em rgb(255, 255, 255),
-    0 0 0.2em rgb(255, 255, 255);
+    1px 1px 1px rgb(78, 71, 71),
+    0 0 0.5em rgb(255, 255, 255),
+    0 0 0.3em rgb(255, 255, 255);
     transition: 0.5s;
 }
 
@@ -98,30 +107,53 @@ nav {
 .menu li {
     display: inline-block;
     position: relative;
+    min-height: 5rem;
+    align-content: center;
   }
 
-.submenu {
+  .submenu {
     display: none;
+    width: 100%;
     padding: 0;
     position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #000000;
-  }
+    top: 4rem;
+    left:-1650%;
+    background-color: black;
+}
 
 .submenu li {
-    background-color: #000000;
+    background-color: black;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    min-height: 2.5rem;
+}
+
+.submenu a {
+    font-size: medium;
+    text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+        transition: text-decoration-color 300ms;
 }
 
 .has-submenu:hover .submenu {
-    display: block;
-  }
+    display: flex;
+    justify-content: center;
+    width:4000%;
+}
 
-/* .menu li ul:hover li a{
+.has-submenu:hover .submenu a {
+    color: white;
+    text-shadow: none;
+}
+
+.submenu a:hover {
+    text-decoration-color: rgb(255, 255, 255);
+}
+
+.menu li ul:hover li a{
     color: white; 
     background-color: transparent; 
     transition: 0.5s;
-} */
+}
 
 
 .divSearchCart {
