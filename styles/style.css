@@ -242,17 +242,27 @@ footer {
 .divNews span {}
 
 .divNews input {
+    display: block;
     min-height: 2.2rem;
-    min-width: 8rem;
-    margin: 2rem;
+    width: 15rem;
+    margin: 1.5rem;
+
 }
 
 .subscribe {
     padding: 0.6rem;
     /* min-height: 2rem; */
+    background-color: rgb(41, 41, 41);
+    color: white;
+    border: 1px solid white;
+    transition: 0.5s;
+}
+
+.subscribe:hover {
     background-color: #b7d9e0;
-    color: rgba(41, 41, 41, 0.582);
-    border: 1px #b7d9e0;
+    color: rgb(41, 41, 41);
+    /* border: 1px solid rgb(41, 41, 41); */
+    cursor: pointer;
 }
 
 .divCustomerCare {
