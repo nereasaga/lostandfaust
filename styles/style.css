@@ -21,7 +21,11 @@
     margin: 0;
     padding: 0;
     font-family: Centuma;
+    list-style: none;
+    
 }
+
+
 
 a {
     text-decoration: none;
@@ -38,21 +42,21 @@ h2 {
 }
 
 h3 {
-
+    width: 100%;
 }
 
 p {
 
 }
 
-body {
+/* body {
     background-color: #504c4c;
-}
+} */
 
 nav {
     width: 100%;
     height: 5rem;
-    background-color: black;
+    background-color: rgb(41, 41, 41);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -61,6 +65,8 @@ nav {
 
 .divLogo {
     width: 20%;
+    min-width: 6rem;
+    padding: 1rem;
 }
 
 .divLogo img {
@@ -72,13 +78,13 @@ nav {
 .divLogo img:hover {
     filter: brightness(0) saturate(100%) invert(87%) sepia(50%) saturate(224%) hue-rotate(158deg) brightness(93%) contrast(88%);
     text-shadow:
-    1px 1px 2px black,
+    1px 1px 2px rgb(41, 41, 41),
     0 0 1em rgb(255, 255, 255),
     0 0 0.2em rgb(255, 255, 255);
 }
 
 .divMenu {
-    width: 30%;
+    width: 40%;
 }
 
 .menu {
@@ -118,11 +124,11 @@ nav {
     position: absolute;
     top: 4rem;
     left:-1650%;
-    background-color: black;
+    background-color: rgb(41, 41, 41);
 }
 
 .submenu li {
-    background-color: black;
+    background-color: rgb(41, 41, 41);
     padding-left: 3rem;
     padding-right: 3rem;
     min-height: 2.5rem;
@@ -161,8 +167,9 @@ nav {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 30%;
+    width: 25%;
     color: white;
+    padding: 2.5rem
 }
 
 button {
@@ -198,5 +205,103 @@ button {
         0 0 0.2em rgb(255, 255, 255);
 }
 
+main {
+    min-height: 40rem;
 
+}
+
+footer {
+    min-height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(41, 41, 41);
+}
+
+.divFooter h3 {
+    padding-bottom: 0.6rem;
+}
+
+
+.divNews {
+    width: 100%;
+    min-height: 4rem;
+    background-color: rgba(41, 41, 41, 0.582);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divNews span {}
+
+.divNews input {
+    min-height: 2.2rem;
+    min-width: 8rem;
+    margin: 2rem;
+}
+
+.subscribe {
+    padding: 0.6rem;
+    /* min-height: 2rem; */
+    background-color: #b7d9e0;
+    color: rgba(41, 41, 41, 0.582);
+    border: 1px #b7d9e0;
+}
+
+.divCustomerCare {
+    /* width: 30%; */
+    min-height: 6rem;
+    background-color: rgb(41, 41, 41) ;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.divInfo {
+    /* width: 30%; */
+    min-height: 6rem;
+    background-color: rgb(41, 41, 41) ;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+.divGet {
+    /* width: 30%; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 6rem;
+    background-color: rgb(41, 41, 41) ;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.divGet a {
+    padding: 1rem;
+}
+
+.divCopy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 2rem;
+    font-size: small;
+    background-color: rgba(41, 41, 41, 0.582);
+    color: white;
+}
 
