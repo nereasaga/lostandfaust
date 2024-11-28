@@ -64,13 +64,13 @@ nav {
 }
 
 .divLogo {
-    width: 20%;
+    width: clamp (150px, 15%,);
     min-width: 6rem;
     padding: 1rem;
 }
 
 .divLogo img {
-    width: 70%;
+    width: 100%;
     transition: 0.5s;
 
 }
