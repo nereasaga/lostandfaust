@@ -18,6 +18,9 @@
           crossorigin="anonymous"
           referrerpolicy="no-referrer"
         />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family==Tangerine:wght@400;700&display=swap" rel="stylesheet">
 <body>
     <nav>
         <!--   LOGO   -->
@@ -44,17 +47,67 @@
         <!--   SEARCH AND CART   -->
            <div class="divSearchCart">
                 <div>
-                    <input type="text" name="Search" id="Search">  <button class="buttonSearch" type="submit"><span><i class="fa fa-search" aria-hidden="true"></i></span></button>
+                    <input type="text" name="Search" id="Search" placeholder="Buscar">  <button class="buttonSearch" type="submit"><span><i class="fa fa-search" aria-hidden="true"></i></span></button>
                 </div>
                 <span><a href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a></span>
            </div>
 
     </nav>
-    <main>
-        <!--  SLIDER  -->
-          <div>
-
+    <header>
+        <div class="contenedorSlides">
+            <div class="slides">
+              <div class="slide-1"></div>
+              <div class="slide-2"></div>
+              <div class="slide-3"></div>
+              <div class="slide-4"></div>
+              <div class="slide-5"></div>
+            </div>
           </div>
+    </header>
+    <main>
+        <!--  FOTOS Y ARTÍCULOS  -->
+          <section class="indexRow">
+            <div class="indexRowLeft">
+                <img src="img/index/1.jpg" alt="Espalda top">
+            </div>
+            <article class="indexRowRight">
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda natus adipisci, delectus odio corporis aspernatur maxime recusandae porro cupiditate, deserunt sapiente quia maiores sequi error nesciunt non facilis. Porro, consequuntur.
+
+                </p>
+            </article>
+          </section>
+            <section class="indexRow">
+                <article class="indexRowLeft">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias incidunt minus minima voluptas maiores officiis eius amet neque ab expedita tempore molestiae illum, aut id dicta. Iste dicta repudiandae quam.
+                    </p>
+                </article>
+                <div class="indexRowRight">
+                    <img src="img/index/2.jpg" alt="Bata nupcial">
+                </div>
+
+            </section>
+            <section class="indexRow">
+                <div class="indexRowLeft">
+                    <img src="img/index/3.jpg" alt="Tijeras y tela">
+                </div>
+                <article class="indexRowRight">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt perspiciatis ratione dolore, facilis similique maxime soluta vel voluptate possimus quidem dolor tenetur adipisci vitae praesentium quas quos totam illo velit.
+                    </p>
+                </article>
+              </section>
+                <section class="indexRow">
+                    <article class="indexRowLeft">
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio exercitationem laborum quibusdam maiores accusamus ipsa quasi ipsam vero odit architecto temporibus aut, doloribus consequuntur. Nesciunt nihil itaque ratione quasi minima.
+                        </p>
+                    </article>
+                    <div class="indexRowRight">
+                        <img src="img/index/4.jpg" alt="Bata nupcial 2">
+                    </div>
+    
+                </section>
         <!--   SHOP PICS   -->
 
     </main>
@@ -62,7 +115,7 @@
         <!--   NEWSLETTER   -->
            <div class="divNews">
             <span>Suscríbete para recibir las últimas novedades</span>
-            <input type="email" name="email"> 
+            <input type="email" name="email" placeholder="Escribe tu email"> 
             <button class="subscribe" type="submit" > Suscríbete</button>
 
            </div>
@@ -70,7 +123,7 @@
         <!--   CUSTOMER CARE   -->
         <div class="divFooter">
            <div class="divCustomerCare">
-            <h3>Customer Care</h3>
+            <h3>CUSTOMER CARE</h3>
             <ul>
                 <li><a href="#">Envíos</a></li>
                 <li><a href="#">Cambios y devoluciones</a></li>
@@ -79,7 +132,7 @@
             </div>
         <!--   INFO   -->
            <div class="divInfo">
-            <h3>Info</h3>
+            <h3>INFO</h3>
                 <ul>
                     <li><a href="#">Política de privacidad</a></li>
                     <li><a href="#">Aviso Legal</a></li>
@@ -88,7 +141,7 @@
            </div>
         <!--   GET IN TOUCH   -->
            <div class="divGet">
-            <h3>Contáctanos</h3>
+            <h3>CONTÁCTANOS</h3>
             <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i>
             </a></li>
             <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>
