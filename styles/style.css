@@ -17,6 +17,20 @@
     font-weight: normal;
 }
 
+@font-face {
+    font-family: 'TangerineR';
+    src: url("../fonts/Tangerine-Regular.ttf") format('opentype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'TangerineB';
+    src: url("../fonts/Tangerine-Bold.ttf") format('opentype');
+    font-style: normal;
+    font-weight: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -80,10 +94,10 @@ nav {
 
 .divLogo img:hover {
     filter: brightness(0) saturate(100%) invert(87%) sepia(50%) saturate(224%) hue-rotate(158deg) brightness(93%) contrast(88%);
-    text-shadow:
+    /* text-shadow:
     1px 1px 2px rgb(41, 41, 41),
     0 0 1em rgb(255, 255, 255),
-    0 0 0.2em rgb(255, 255, 255);
+    0 0 0.2em rgb(255, 255, 255); */
 }
 
 .divMenu {
@@ -103,9 +117,9 @@ nav {
 .menu li:hover a{
     color: #b7d9e0;
     text-shadow:
-    1px 1px 1px rgb(78, 71, 71),
+    /* 1px 1px 1px rgb(78, 71, 71),
     0 0 0.5em rgb(255, 255, 255),
-    0 0 0.3em rgb(255, 255, 255);
+    0 0 0.3em rgb(255, 255, 255); */
     transition: 0.5s;
 }
 
@@ -193,10 +207,10 @@ button {
 
 .buttonSearch:hover {
     color: #b7d9e0;
-    text-shadow:
+    /* text-shadow:
     1px 1px 2px black,
     0 0 1em rgb(255, 255, 255),
-    0 0 0.2em rgb(255, 255, 255);
+    0 0 0.2em rgb(255, 255, 255); */
 }
 
 .divSearchCart i {
@@ -206,10 +220,11 @@ button {
 .divSearchCart i:hover {
         color: #b7d9e0;
         text-shadow:
-        1px 1px 2px black,
+        /* 1px 1px 2px black,
         0 0 1em rgb(255, 255, 255),
         0 0 0.2em rgb(255, 255, 255);
-}
+ */ }
+ 
 
 header {
     padding-top: 5rem;
@@ -315,8 +330,8 @@ main {
 }
 
 .indexRow p {
-    font-family:Tangerine, cursive;
-    font-size: 1.5rem;
+    font-family:TangerineB, cursive;
+    font-size: 2.5rem;
 }
 
 
