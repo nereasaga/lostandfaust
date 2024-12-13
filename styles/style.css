@@ -582,22 +582,26 @@ footer a {
     } */
     
     .divMenuNav {
-    display: none;
-    flex-direction: column-reverse;
-    align-items: center;
-    z-index: 100;
-    background-color: rgb(41, 41, 41);
-    transition: 500ms;
-    /* transition-delay: 500ms; */
-    transition-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        display: none; /* Menú oculto por defecto */
+        position: absolute;
+        top: 5rem;
+        right: 0;
+        width: 100%;
+        background-color: rgb(41, 41, 41);
+        z-index: 150;
+        flex-direction: column;
+        align-items: center;
     }
 
     .labelBurguer {
-        display: block;
-        position:fixed;
-        top: 0rem;
-        right:0rem;
-        z-index: 101; 
+        display: block; /* Botón hamburguesa visible */
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 200; /* Asegúrate de que esté arriba */
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
     }
 
     #menu {display: none;
@@ -607,23 +611,33 @@ footer a {
             z-index: 101; 
         }
 
-    .divMenuNav ul {width: 100%;
+    .divMenuNav {
+        display: none;
+
+        position: absolute;
+        top: 5rem;
+        right: 0;
+        background-color: rgb(41, 41, 41);
+        width: 100%;
+    }
+
+    /* .divMenuNav ul {width: 100%;
         display: flex;
         flex-direction: column;
         min-height: 5rem;
         justify-content: center;
         align-items: center;
         background-color: rgb(41, 41, 41);
-    }
+    } */
 
     .divMenuNav ul li {
-        background-color: rgb(41, 41, 41);
+        /* background-color: rgb(41, 41, 41);
         min-height: 5rem;
         text-align: center;
-        width: 100%;
+        width: 100%; */
         /* border-radius: 0.5rem; */
         border-bottom: 0.12rem solid rgb(255, 255, 255, .3);
-    }
+    } 
 
     .divMenuNav ul li a {
         color: white;
@@ -632,27 +646,61 @@ footer a {
     .divSearchCart {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        align-self: flex-start;
+        width: 100%;
+        padding: 1rem;
+
+    } 
+
+    .divSearchCart span {
+        width: 100%;
     }
 
     .divLogo {
         display: none;
     }
 
-    #menu:checked  ~ .divMenuNav {
-        display: flex;
-        flex-direction: column-reverse;
-      }
-    
-    .has-submenu:checked  ~ .submenu li {
-        display: flex;
+    #menu:checked ~ .divMenuNav {
+        display: flex; 
         flex-direction: column;
-        z-index: 200;
-      }
+    }
 
-    #menu:checked ~ label .burguer {
-        
-            color: white;
-            border:none;
-        }
+      .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .submenu {
+        display: flex; 
+        flex-direction: column;
+        color: white;
+        width: 100%;
+        background-color: rgb(30, 30, 30);
+        margin-top: 0.5rem;
+        padding: 0;
+    }
+    
+    .has-submenu > a {
+        position: relative;
+        display: block;
+        padding: 1rem;
+    }
+    
+    .submenu li {
+        text-align: center;
+        padding: 0.5rem 0;
+    }
+    
+    .submenu a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    
+    .submenu a:hover {
+        color: #b7d9e0;
+    }
+
 
     }
