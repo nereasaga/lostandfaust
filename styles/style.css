@@ -546,15 +546,34 @@ footer a {
         /*  Codigo pagina en smartphone   */
         
 @media only screen and (max-width: 602px) {
+
+    main {
+        height: max-content;
+        
+    }
+
     .indexRow {
         flex-direction: column;
         justify-content: center;
+        min-height: 30rem;
     }
 
     .indexRowLeft,
     .indexRowRight {
         width: 100%;
         padding: 0;
+    }
+
+    .indexRowLeft,
+    .indexRowRight  {
+        width: 100%;
+        padding: 0;
+    }
+
+    .indexRowLeft p,
+    .indexRowRight p{
+        text-align: center;
+        padding: 2rem;
     }
 
     .divNews {
@@ -612,6 +631,8 @@ footer a {
         background-color: rgb(41, 41, 41);
     }
 
+
+
     /* nav {
         position: static;
     } */
@@ -619,7 +640,7 @@ footer a {
     .divMenu {
         display: none; 
         position: absolute;
-        top: 10rem;
+        top: 9rem;
         right: 0;
         width: 100%;
         background-color: rgb(41, 41, 41);
@@ -656,12 +677,14 @@ footer a {
     }
 
     #menu:checked ~ .divSearchCart {
-        display: inline-block;
-        align-content: center;
+        display: flex;
+        justify-content: center;
     }
 
     #menu:checked ~ .divMenu {
         display: flex;
         flex-direction: column;
     }
+
+
 }
