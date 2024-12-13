@@ -22,6 +22,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <body>
+    
     <nav>
         <!--   LOGO   -->
            <div class="divLogo">
@@ -31,19 +32,27 @@
                 </a>
            </div>
         <!--   MENU   -->
-           <div class="divMenu">
-            <ul class="menu">
-                <li class="has-submenu"><a href="tienda.html">TIENDA</a>
-                    <ul class="submenu">
-                        <li><a href="#">Ropa de noche</a></li>
-                        <li><a href="#">Batas y kimonos</a></li>
-                        <li><a href="#">Braguitas</a></li>
-                    </ul>
-                </li>
-                <li><a href="quienessomos.html">QUIÉNES SOMOS</a></li>
-                <li><a href="blog.html">BLOG</a></li>
-            </ul>
+        <input type="checkbox" id="menu">
+        <label for="menu" class="labelBurguer"> 
+            <span class="burguer"> 
+                <i class="fa-solid fa-bars"></i> 
+            </span>
+        </label>
+        <div class="divMenuNav">
+            <div class="divMenu">
+                <ul class="menu">
+                    <li class="has-submenu"><a href="tienda.html">TIENDA</a>
+                        <ul class="submenu">
+                            <li><a href="#">Ropa de noche</a></li>
+                            <li><a href="#">Batas y kimonos</a></li>
+                            <li><a href="#">Braguitas</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="quienessomos.html">QUIÉNES SOMOS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                </ul>
            </div>
+        
         <!--   SEARCH AND CART   -->
            <div class="divSearchCart">
                 <div>
@@ -51,7 +60,7 @@
                 </div>
                 <span><a href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a></span>
            </div>
-
+        </div>
     </nav>
     <header>
         <div class="contenedorSlides">

@@ -430,6 +430,7 @@ footer a {
 
 .divCustomerCare {
     /* width: 30%; */
+    box-sizing: 30%;
     min-height: 6rem;
     background-color: rgb(41, 41, 41) ;
     padding-left: 4rem;
@@ -441,6 +442,7 @@ footer a {
 }
 
 .divInfo {
+    box-sizing: 30%;
     /* width: 30%; */
     min-height: 6rem;
     background-color: rgb(41, 41, 41) ;
@@ -454,6 +456,7 @@ footer a {
 
 
 .divGet {
+    box-sizing: 30%;
     /* width: 30%; */
     display: flex;
     flex-direction: row;
@@ -483,6 +486,36 @@ footer a {
     background-color:rgb(41, 41, 41);
     color:rgb(126, 126, 126);
 }
+
+#menu {display: none;
+    position:fixed;
+    top: 0rem;
+    right:0rem }
+.labelBurguer {display: none;
+    position:fixed;
+        top: 0rem;
+        right:0rem }
+
+.burguer {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /* border: 1px solid #081526; */
+    border-radius: 5px;
+    background-color: rgb(41,41,41);
+    width: 3rem;
+    height: 3rem;
+    line-height: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+}
+
+
+
 
         /*  Codigo pagina en tablet   */
 
@@ -518,6 +551,108 @@ footer a {
     .indexRowLeft,
     .indexRowRight {
         width: 100%;
+        padding: 0;
     }
 
-          }
+    .divNews {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .divFooter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .divFooter div {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        text-align: center;
+    }
+
+    .divGet a {
+        font-size: 3rem;
+    }
+
+
+    /* nav {
+        position:static;
+    } */
+    
+    .divMenuNav {
+    display: none;
+    flex-direction: column-reverse;
+    align-items: center;
+    z-index: 100;
+    background-color: rgb(41, 41, 41);
+    transition: 500ms;
+    /* transition-delay: 500ms; */
+    transition-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .labelBurguer {
+        display: block;
+        position:fixed;
+        top: 0rem;
+        right:0rem;
+        z-index: 101; 
+    }
+
+    #menu {display: none;
+            position:fixed;
+            top: 0rem;
+            right:0rem;
+            z-index: 101; 
+        }
+
+    .divMenuNav ul {width: 100%;
+        display: flex;
+        flex-direction: column;
+        min-height: 5rem;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(41, 41, 41);
+    }
+
+    .divMenuNav ul li {
+        background-color: rgb(41, 41, 41);
+        min-height: 5rem;
+        text-align: center;
+        width: 100%;
+        /* border-radius: 0.5rem; */
+        border-bottom: 0.12rem solid rgb(255, 255, 255, .3);
+    }
+
+    .divMenuNav ul li a {
+        color: white;
+    }
+
+    .divSearchCart {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .divLogo {
+        display: none;
+    }
+
+    #menu:checked  ~ .divMenuNav {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    
+    .has-submenu:checked  ~ .submenu li {
+        display: flex;
+        flex-direction: column;
+        z-index: 200;
+      }
+
+    #menu:checked ~ label .burguer {
+        
+            color: white;
+            border:none;
+        }
+
+    }
