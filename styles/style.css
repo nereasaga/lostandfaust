@@ -221,12 +221,13 @@ button {
     0 0 0.2em rgb(255, 255, 255); */
 }
 
-.divSearchCart i {
+.divSearchCart img {
+    height: 1.5rem;
     transition: 0.5s;
 }
 
-.divSearchCart i:hover {
-        color: #b7d9e0;
+.divSearchCart img:hover {
+    filter: brightness(0) saturate(100%) invert(87%) sepia(50%) saturate(224%) hue-rotate(158deg) brightness(93%) contrast(88%);
         /* text-shadow: 1px 1px 2px black,
         0 0 1em rgb(255, 255, 255),
         0 0 0.2em rgb(255, 255, 255); */
@@ -444,18 +445,7 @@ footer a {
     font-size: 1rem;
 }
 
-.divInfo {
-    box-sizing: 30%;
-    /* width: 30%; */
-    min-height: 6rem;
-    background-color: rgb(41, 41, 41) ;
-    padding-left: 4rem;
-    padding-right: 4rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    color: rgb(126, 126, 126);
-    font-size: 1rem;
-}
+
 
 
 .divGet {
@@ -477,6 +467,20 @@ footer a {
 
 .divGet a {
     padding: 0.8rem;
+    font-family: ;
+}
+
+.divInfo {
+    box-sizing: 30%;
+    /* width: 30%; */
+    min-height: 6rem;
+    background-color: rgb(41, 41, 41) ;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: rgb(126, 126, 126);
+    font-size: 1rem;
 }
 
 .divCopy {
@@ -511,7 +515,8 @@ footer a {
     width: 3rem;
     height: 3rem;
     line-height: 2rem;
-    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3.5rem;
     font-weight: bold;
     text-align: center;
     user-select: none;
@@ -595,7 +600,7 @@ footer a {
     }
 
     .divGet a {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     /* nav {
