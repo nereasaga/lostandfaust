@@ -625,6 +625,18 @@ footer a {
         text-align: center;
     }
 
+    .divLogo img {
+        object-fit:none;
+    }
+
+    .divCart {
+        width: 50%;
+        padding-right: 5rem;
+    }
+    .divCart img {
+        height: 1.8rem;
+    }
+
     .divMenu {
         width: 100%;
         display: flex;
@@ -637,14 +649,15 @@ footer a {
         padding: 1rem 0;
     }
 
-    .divSearchCart {
+    .divSearch {
         display: none;
         position: absolute;
         top: 5rem;
-        right: 0;
+        right: -2rem;
         width: 100%;
         justify-content: center;
         padding: 1rem;
+        padding-left: rem;
         background-color: rgb(41, 41, 41);
     }
 
@@ -689,11 +702,11 @@ footer a {
     .labelBurguer {
         display: block;
         position: absolute;
-        top: 1rem;
+        top: 0.9rem;
         right: 1rem;
     }
 
-    #menu:checked ~ .divSearchCart {
+    #menu:checked ~ .divSearch {
         display: flex;
         justify-content: center;
     }
