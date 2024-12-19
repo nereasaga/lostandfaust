@@ -626,7 +626,7 @@ footer a {
     }
 
     .divLogo img {
-        object-fit:none;
+        object-fit:cover;
     }
 
     .divCart {
