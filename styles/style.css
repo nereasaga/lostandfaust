@@ -144,7 +144,7 @@ nav {
     padding: 0;
     position: absolute;
     top: 4rem;
-    left:-1640%;
+    left:-1730%;
     background-color: rgb(41, 41, 41);
     z-index: 100;
 }
@@ -166,7 +166,7 @@ nav {
 .has-submenu:hover .submenu {
     display: flex;
     justify-content: center;
-    width:4100%;
+    width:4300%;
 }
 
 .has-submenu:hover .submenu a {
@@ -185,6 +185,7 @@ nav {
 }
 
 .divCart {
+    flex: 1;
     width: 10%;
     display: flex;
     justify-content: flex-end;
@@ -193,10 +194,11 @@ nav {
 .divCart img {
     height: 1.5rem;
     transition: 0.5s;
-    align-self: flex-end;
+    /* align-self: flex-end; */
 }
 
 .divSearch {
+    flex: 1;
     display: flex;
     flex-direction: row;
     justify-content:flex-end;
@@ -553,6 +555,10 @@ footer a {
 
     .indexRow img {
         width: 80%;
+    }
+
+    .divSearch {
+        padding: 0;
     }
 
         }
