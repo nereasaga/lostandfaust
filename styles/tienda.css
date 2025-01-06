@@ -1,0 +1,15 @@
+header {
+    height: 15rem;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+header img {
+    overflow: hidden;
+    object-fit: cover;
+    
+}
+
+main {
+    min-height: 30rem;
+}
